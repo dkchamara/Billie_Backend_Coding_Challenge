@@ -43,7 +43,7 @@ class CompanyController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Company created successfully',
-            'data' => $company
+            'company_id' => $company->id
         ], Response::HTTP_OK);
     }
 }
